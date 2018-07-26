@@ -65,6 +65,8 @@ To install docker on your system, please follow the instructions provided by doc
 # Download the docker image from docker hub (recommended)
 
 docker pull gkandoi/cavatica
+# Alternatively
+docker pull jcolella/cavatica_code	# Please change the image name in the following commands depending on which image you pull
 ```
 
 ```
@@ -98,6 +100,13 @@ docker run -v `pwd`:/cavatica/data/output gkandoi/cavatica
     * To run a bash shell in our docker environment:
     docker run -v `pwd`:/cavatica/data/output -it gkandoi/cavatica bash
 ```
+
+## Our experience working through the project
+
+We have tried to document our daily work log and the difficulities that we faced during the process of the project:
+
+Daily work log: https://docs.google.com/document/d/1XoMGgpLPHKarj8bfEFkS5U5mFUG6CdoNv_QBUOJGQU4/edit?usp=sharing
+Instructions and description: https://hackmd.io/bi_f9mPxT32wLccPNQqmlQ?view
 
 ## Note
 
