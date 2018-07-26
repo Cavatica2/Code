@@ -11,7 +11,7 @@ The container contains two apps, one to run cavatica which queries pubmed and pu
 To install singularity on your system, please follow the instructions provided by singularity: http://singularity.lbl.gov/docs-installation
 
 ```
-# To download the singularity image from singularity hub please use one of the following commands:
+# To download the singularity image from singularity hub please use one of the following commands (recommended):
 
 singularity pull shub://Cavatica2/Code
 singularity pull --name customname.img shub://Cavatica2/Code	# to give the image a custom name, please replace the customname.img to the desired name.
@@ -28,9 +28,11 @@ sudo singularity build mango.simg Singularity
 
 ### Run cavatica using user defined search words
 
+A config.txt file with the search query terms is required in an output folder to run cavatica. Alternatively, please change the bind path in the `singularity run` command to the destination folder where you want the output from cavatica. The config.txt file should be in this folder as well.
+
 ```
 mkdir output
-echo "Your Search Term 1" >> output/config.txt
+echo "Your Search Term 1" >> output/config.txt	# Replace all "Your Search term" with the queries you want to perform.
 echo "Your Search Term 2" >> output/config.txt
 echo "Your Search Term 3" >> output/config.txt
 singularity run --app cavatica --bind output:/cavatica/data/output mango.simg
@@ -60,7 +62,7 @@ The container runs cavatica which queries pubmed and pubmed central.
 To install docker on your system, please follow the instructions provided by docker: https://docs.docker.com/install/
 
 ```
-# Download the docker image from docker hub
+# Download the docker image from docker hub (recommended)
 
 docker pull gkandoi/cavatica
 ```
@@ -81,16 +83,22 @@ sudo docker build -t cavatica .
 
 ### Run cavatica using user defined search words
 
+A config.txt file with the search query terms is required in the current directory to run cavatica. Alternatively, please change the volume mount path in the `docker run` command to the destination folder where you want the output from cavatica. The config.txt file should be in this folder as well.
+
 ```
-echo "Your Search Term 1" >> config.txt
+echo "Your Search Term 1" >> config.txt	# Replace all "Your Search term" with the queries you want to perform.
 echo "Your Search Term 2" >> config.txt
 echo "Your Search Term 3" >> config.txt
 
 * Run docker image
-docker run -v `pwd`:/cavatica/data/output cavatica
+docker run -v `pwd`:/cavatica/data/output gkandoi/cavatica
 
     * To run interactively:
-	docker run -v `pwd`:/cavatica/data/output -it cavatica
+	docker run -v `pwd`:/cavatica/data/output -it gkandoi/cavatica
     * To run a bash shell in our docker environment:
-    docker run -v `pwd`:/cavatica/data/output -it cavatica bash
+    docker run -v `pwd`:/cavatica/data/output -it gkandoi/cavatica bash
 ```
+
+## Note
+
+The Mango studio provided here is only for the purpose of demonstration during the presentations at the NSF Cyber Carpentry 2018 workshop. We will remove the Mango provided here as soon as the workshop ends.
