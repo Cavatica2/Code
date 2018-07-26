@@ -105,8 +105,8 @@ docker run -v `pwd`:/cavatica/data/output gkandoi/cavatica
 
 We have tried to document our daily work log and the difficulities that we faced during the process of the project:
 
-Daily work log: https://docs.google.com/document/d/1XoMGgpLPHKarj8bfEFkS5U5mFUG6CdoNv_QBUOJGQU4/edit?usp=sharing
-Instructions and description: https://hackmd.io/bi_f9mPxT32wLccPNQqmlQ?view
+* Daily work log: https://docs.google.com/document/d/1XoMGgpLPHKarj8bfEFkS5U5mFUG6CdoNv_QBUOJGQU4/edit?usp=sharing
+* Instructions and description: https://hackmd.io/bi_f9mPxT32wLccPNQqmlQ?view
 
 ## Note
 
