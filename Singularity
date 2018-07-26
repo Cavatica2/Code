@@ -15,8 +15,8 @@ From: r-base
 		echo 'install.packages(c("ggplot2",  "RColorBrewer", "plotrix", "readr", "RISmed", "stringr", "igraph"), repos="http://cran.us.r-project.org", dependencies=TRUE)' > /tmp/packages.R \
 && Rscript /tmp/packages.R
 		git clone https://github.com/incertae-sedis/cavatica.git
-		wget https://github.com/Cavatica2/Code/blob/master/Mango_Mint_1.24_64bit.tgz
-		tar xf Mango_Mint_1.24_64bit.tgz
+		wget https://github.com/Cavatica2/Code/blob/master/Mango_Mint_1.24_64bit.tgz?raw=true
+		tar xf 'Mango_Mint_1.24_64bit.tgz?raw=true'
 
 %apprun cavatica
 		cd /cavatica/data/output
@@ -27,6 +27,7 @@ From: r-base
 %apprun Mango
 		cd /Mango_Mint_1.24_64bit
 		./Mango
+
 %runscript
 		bash
 
