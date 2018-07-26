@@ -33,3 +33,10 @@ From: r-base
 
 %environment
 		export PATH=/:$PATH
+
+%help
+I am a singularity container for the cavatica tool, which was uild by the maintainers during the NSF Cyber Carpentry 2018.
+
+%labels
+	Maintainer Anuja Majmundar, Elena Auer, Gaurav Kandoi, Meysam Ghaffari
+
