@@ -8,7 +8,7 @@ The container contains two apps, one to run cavatica which queries pubmed and pu
 
 ### How to obtain the singularity image
 
-To install singularity on your system, please follow the instructions provided by singularity: http://singularity.lbl.gov/docs-installation
+To install singularity on your system, please follow the instructions provided by singularity: http://singularity.lbl.gov/docs-installation. The singularity image is available on [Singularity Hub](https://www.singularity-hub.org/collections/1341)
 
 ```
 # To download the singularity image from singularity hub please use one of the following commands (recommended):
@@ -38,6 +38,13 @@ echo "Your Search Term 3" >> output/config.txt
 singularity run --app cavatica --bind output:/cavatica/data/output mango.simg
 ```
 
+If you want to search for VisANT and GraphViz tools, the config.txt file should look like this:
+
+```
+VisANT
+GraphViz
+```
+
 ## Run mango graph studio to visualize results from cavatica
 
 ```
@@ -59,14 +66,14 @@ The container runs cavatica which queries pubmed and pubmed central.
 
 ### How to obtain the docker image
 
-To install docker on your system, please follow the instructions provided by docker: https://docs.docker.com/install/
+To install docker on your system, please follow the instructions provided by docker: https://docs.docker.com/install/. The docker image is available on [Docker Hub](https://hub.docker.com/r/gkandoi/cavatica/)
 
 ```
 # Download the docker image from docker hub (recommended)
 
-docker pull gkandoi/cavatica
-# Alternatively
 docker pull jcolella/cavatica_code	# Please change the image name in the following commands depending on which image you pull
+# Alternatively
+docker pull gkandoi/cavatica
 ```
 
 ```
@@ -74,7 +81,7 @@ docker pull jcolella/cavatica_code	# Please change the image name in the followi
 
 wget https://raw.githubusercontent.com/Cavatica2/Code/master/Dockerfile
 
-* Add sudo used group to docker with my username
+* Add sudo used group to docker with your username
 sudo usermod -aG docker {username}
     - Replace {username} with your username...
 
