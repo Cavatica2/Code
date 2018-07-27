@@ -44,7 +44,7 @@ If you want to search for VisANT and GraphViz tools, the config.txt file should 
 
 ```
 VisANT
-GraphViz
+Ingenuity+Pathway+Analysis
 ```
 
 ## Run mango graph studio to visualize results from cavatica
