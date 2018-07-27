@@ -40,12 +40,14 @@ echo "Your Search Term 3" >> output/config.txt
 singularity run --app cavatica --bind output:/cavatica/data/output mango.simg
 ```
 
-If you want to search for VisANT and GraphViz tools, the config.txt file should look like this:
+If you want to search for VisANT and Ingenuity Pathway Analysis tools, the config.txt file should look like this:
 
 ```
 VisANT
 Ingenuity+Pathway+Analysis
 ```
+
+Replace whitespaces in query search term with a + sign.
 
 ## Run mango graph studio to visualize results from cavatica
 
