@@ -8,7 +8,9 @@ The container contains two apps, one to run cavatica which queries pubmed and pu
 
 ### How to obtain the singularity image
 
-To install singularity on your system, please follow the instructions provided by singularity: http://singularity.lbl.gov/docs-installation. The singularity image is available on [Singularity Hub](https://www.singularity-hub.org/collections/1341)
+To install singularity on your system, please follow the instructions provided by singularity: http://singularity.lbl.gov/docs-installation. The singularity image is available on [Singularity Hub](https://www.singularity-hub.org/collections/1341).
+
+We've built it using singularity version 2.5.1 and the commands might not work with older versions of singularity.
 
 ```
 # To download the singularity image from singularity hub please use one of the following commands (recommended):
