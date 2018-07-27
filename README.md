@@ -41,7 +41,7 @@ singularity run --app cavatica --bind output:/cavatica/data/output mango.simg
 ## Run mango graph studio to visualize results from cavatica
 
 ```
-singularity run --app mango --bind output:/cavatica/data/output mango.simg
+singularity run --app Mango --bind output:/cavatica/data/output mango.simg
 
 # This should pop-up the mango GUI depending on the capabilities of the user's local environment.
 # Once the mango GUI pops up, follow the following based on the original instructions found on the cavatica readme.
