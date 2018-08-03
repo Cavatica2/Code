@@ -118,7 +118,3 @@ We have tried to document our daily work log and the difficulities that we faced
 
 * Daily work log: https://docs.google.com/document/d/1XoMGgpLPHKarj8bfEFkS5U5mFUG6CdoNv_QBUOJGQU4/edit?usp=sharing
 * Instructions and description: https://hackmd.io/bi_f9mPxT32wLccPNQqmlQ?view
-
-## Note
-
-The Mango studio provided here is only for the purpose of demonstration during the presentations at the NSF Cyber Carpentry 2018 workshop. We will remove the Mango provided here as soon as the workshop ends.

@@ -15,8 +15,8 @@ From: r-base
 		echo 'install.packages(c("ggplot2",  "RColorBrewer", "plotrix", "readr", "RISmed", "stringr", "igraph"), repos="http://cran.us.r-project.org", dependencies=TRUE)' > /tmp/packages.R \
 && Rscript /tmp/packages.R
 		git clone https://github.com/incertae-sedis/cavatica.git
-		wget https://github.com/Cavatica2/Code/blob/master/Mango_Mint_1.24_64bit.tgz?raw=true
-		tar xf 'Mango_Mint_1.24_64bit.tgz?raw=true'
+#		wget https://github.com/Cavatica2/Code/blob/master/Mango_Mint_1.24_64bit.tgz?raw=true
+#		tar xf 'Mango_Mint_1.24_64bit.tgz?raw=true'
 
 %apprun cavatica
 		cd /cavatica/data/output
@@ -24,6 +24,7 @@ From: r-base
 		../../code/script.sh
 		find /cavatica/data/output -type l | xargs rm
 
+## Please register and download your own copy of Mango, extract, and copy the folder to the root directory of the container to use the following app.
 %apprun Mango
 		cd /Mango_Mint_1.24_64bit
 		./Mango
@@ -35,7 +36,7 @@ From: r-base
 		export PATH=/:$PATH
 
 %help
-I am a singularity container for the cavatica tool, which was build by the maintainers during the NSF Cyber Carpentry 2018.
+I am a singularity container for the cavatica tool, which was build by the maintainers during the NSF Cyber Carpentry 2018. Please register and download your own copy of Mango, extract, and copy the folder to the root directory of the container to use the Mango GUI app from within the container.
 
 %labels
 	Maintainer Anuja Majmundar, Elena Auer, Gaurav Kandoi, Meysam Ghaffari
